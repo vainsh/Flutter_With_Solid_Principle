@@ -52,23 +52,25 @@ class _LoginFormView extends WidgetView<LoginForm, LoginFormController> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        TextField(
-          onChanged: state.handleEmailChanged,
-          decoration: InputDecoration(labelText: 'Email'),
-        ),
-        TextField(
-          onChanged: state.handlePasswordChanged,
-          decoration: InputDecoration(labelText: 'Password'),
-        ),
-        ElevatedButton(
-          onPressed: state.handleLoginPressed,
-          child: state.isLoading
-              ? CircularProgressIndicator()
-              : Text('Login'),
-        ),
-      ],
+    return Expanded(
+      child: Column(
+        children: [
+          TextField(
+            onChanged: state.handleEmailChanged,
+            decoration: InputDecoration(labelText: 'Email'),
+          ),
+          TextField(
+            onChanged: state.handlePasswordChanged,
+            decoration: InputDecoration(labelText: 'Password'),
+          ),
+          ElevatedButton(
+            onPressed: state.handleLoginPressed,
+            child: state.isLoading
+                ? CircularProgressIndicator()
+                : Text('Login'),
+          ),
+        ],
+      ),
     );
   }
 }
