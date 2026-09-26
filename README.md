@@ -43,3 +43,11 @@ License / Authors
 
 - Author: (your name)
 - Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+
+
+## Flutter Beginner Visual Examples
+
+- Stack vs IndexedStack
+  - `lib/FlutterBeginner/stack_vs_indexed_stack.dart`
+  - Shows layered UI with Stack and tab-style screen switching with IndexedStack.
+  - The example is intentionally separate from the SOLID examples so it can be reviewed independently.
